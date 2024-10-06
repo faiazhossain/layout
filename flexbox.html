@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
+      .el {
+        /* Default */
+        /* flex-grow: 0;
+        flex-basis: auto; */
+        flex: 0 0 100px;
+      }
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
@@ -21,6 +28,7 @@
       }
       .el--5 {
         background-color: palevioletred;
+        align-self: stretch;
       }
       .el--6 {
         background-color: steelblue;
@@ -40,6 +48,12 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
