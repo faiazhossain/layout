@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Collapsing Example</title>
+    <style>
+      .box1 {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        margin-bottom: 100px; /* Top and bottom margins of 100px */
+      }
+      .box2 {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        margin-top: 140px; /* Top and bottom margins of 100px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">Content of first div</div>
+    <div class="box2">Content of second div</div>
+  </body>
+</html>
